@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <div>
+      <button id="playGame">Play Game</button>
+    </div>
+
+    <form id="question-text">
+      <p id="question"></p>
+
+      <div id="options">
+        <!-- <input id="option1" type="radio" name="options" value="1"> <br>
+        <input id="option2" type="radio" name="options" value="1"> <br>
+        <input id="option3" type="radio" name="options" value="1"> <br>
+        <input id="option4" type="radio" name="options" value="1"> <br> -->
+      </div>
+
+      <input id="submitAnswer" type="button" value="Submit">
+
+    </form>
+
+      <div id="answer-text">
+        <div id="timeout-text">
+          <!-- <p>Out of Time</p>
+          <p>Correct answer is <span></span></p> -->
+        </div>
+        <div id="wrongAnswer-text">
+          <!-- <p>Nope!</p>
+          <p>Correct answer is <span></span></p> -->
+        </div>
+        <div id="correctAnswer-text">
+          <!-- <p>Correct!</p> -->
+        </div>
+        <img src="#" alt="">
+      </div>
+    <!-- </div> -->
+    <p id="time-text"></p>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+  </body>
+</html>
