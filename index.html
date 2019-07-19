@@ -13,40 +13,34 @@
     </script>
   </head>
   <body>
-    <div>
-      <button id="playGame">Play Game</button>
-    </div>
 
     <form id="question-text">
       <p id="question"></p>
-
       <div id="options">
-        <!-- <input id="option1" type="radio" name="options" value="1"> <br>
-        <input id="option2" type="radio" name="options" value="1"> <br>
-        <input id="option3" type="radio" name="options" value="1"> <br>
-        <input id="option4" type="radio" name="options" value="1"> <br> -->
       </div>
-
       <input id="submitAnswer" type="button" value="Submit">
-
     </form>
 
-      <div id="answer-text">
-        <div id="timeout-text">
-          <!-- <p>Out of Time</p>
-          <p>Correct answer is <span></span></p> -->
-        </div>
-        <div id="wrongAnswer-text">
-          <!-- <p>Nope!</p>
-          <p>Correct answer is <span></span></p> -->
-        </div>
-        <div id="correctAnswer-text">
-          <!-- <p>Correct!</p> -->
-        </div>
-        <img src="#" alt="">
+    <div id="answer-text">
+      <div id="timeout-text">
       </div>
-    <!-- </div> -->
+      <img src="#" alt="">
+    </div>
+
     <p id="time-text"></p>
+
+    <button id="next-question">Next Question</button>
+
+    <div id="final-text">
+      <h3>Good Job Mate!! Here's how you did</h3>
+      <p id=correntCount-text></p>
+      <p id=incorrectCount-text></p>
+      <p id=unanswered-text></p>
+    </div>
+
+    <div>
+        <button id="play-game">Play Game</button>
+    </div>
 
     <script type="text/javascript" src="assets/javascript/app.js"></script>
   </body>
