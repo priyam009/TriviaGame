@@ -100,7 +100,7 @@ body {
 
 .output-text {
   position: absolute;
-  top: 55%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

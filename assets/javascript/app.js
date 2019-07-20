@@ -68,7 +68,7 @@ function askQuestion() {
   $("#time-text").show();
   $("#options").empty();
   $("#next-question").hide();
-
+  $("#answer-image").hide();
 
   $("#question").text(Object.keys(questions)[count]);
 
@@ -124,6 +124,11 @@ function missedAnswer() {
     $("#timeout-text").show();
     $("#timeout-text").append("<p>You missed out!!!</p>");
     $("#timeout-text").append("<p>The Correct Answer is " + correctAnswers[count] +"</p>");
+
+    $("#answer-image").show();
+    $("#answer-image").attr("src", "https://media.giphy.com/media/Y41egxqF4fjixufTPq/giphy.gif");
+    $("#answer-image").attr("width","400px;");
+
     unanswered++;
   }
   decision();
@@ -137,6 +142,11 @@ function showAnswer(selected) {
 
     $("#timeout-text").append("<p>Yayy!! You are right</p>");
     $("#timeout-text").append("<p>" + correctAnswers[count] +" it is</p>");
+
+    $("#answer-image").show();
+    $("#answer-image").attr("src", "https://media.giphy.com/media/1GTZA4flUzQI0/giphy.gif");
+    $("#answer-image").attr("width","400px;");
+
     correntCount++;
   }
   else {
@@ -145,6 +155,12 @@ function showAnswer(selected) {
 
     $("#timeout-text").append("<p>Nahh!! You are wrong</p>");
     $("#timeout-text").append("<p>The Correct Answer is " + correctAnswers[count] +"</p>");
+
+
+    $("#answer-image").show();
+    $("#answer-image").attr("src", "https://media.giphy.com/media/BEob5qwFkSJ7G/giphy.gif");
+    $("#answer-image").attr("width","350px;");
+
     incorrectCount++;
   }
   decision();
