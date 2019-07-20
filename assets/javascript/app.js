@@ -193,6 +193,7 @@ function nextQuestion() {
 //To show the final results with an option to play the game again
 function showResult() {
   $("#next-question").off();
+  $("#answer-image").hide();
   $("#timeout-text").empty();
 
   $("#final-text").show();
